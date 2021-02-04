@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reliper</title>
+        <meta name="generator" content="prestashop">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!--Style / Animate CSS / Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo align-self-center">
+                    <img src="../assets/img/logo.svg" alt="Reliper Logo">
+                </div>
+                <div class="searchbar pt-3">
+                    <form class="form-inline my-2 my-lg-0 pl-6">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Busca tus productos aquí" aria-label="Search">
+                        <button class="btn btn-outline-success btn-search my-2 my-sm-0" type="submit">Buscar</button>
+                      </form>
+                </div>
+                <div class="cart-button">
+                    <button type="button" class="btn btn-primary btn-white btn-sm align-self-center mt-2 pl-2" data-toggle="modal" data-target="#cartButtonModal">$206.000</button>
+                    <p class="mt-2">4 items</p>
+                </div>
+            </nav> 
+        </header>
+            
+        <main class="banner-main">
+            <aside class="general-aside-menu">
+                <div class="general-aside-menu__dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FILTRO POR CATEGORÍAS
+                      </button>
+                </div>
+                <div class="general-aside-menu__categories">
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                        <img src="../assets/img/icons/safety.svg" alt=""></img>
+                        <h5>SEGURIDAD</h5>
+                    </button>
+
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                        <img src="../assets/img/icons/flashlight.svg" alt=""></img>
+                        <h5>FLASHLIGHT</h5>
+                    </button>
+
+
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                        <img src="../assets/img/icons/tools.svg" alt=""></img>
+                        <h5>HERRAMIENTAS</h5>
+                    </button>
+
+
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                            <img src="../assets/img/icons/battery.svg" alt=""></img>
+                            <h5>BATERÍAS</h5>
+                    </button>
+
+
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                        <img src="../assets/img/icons/nut.svg" alt=""></img>
+                        <h5>SUJECIÓN</h5>
+                    </button>
+
+
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                        <img src="../assets/img/icons/solar.svg" alt=""></img>
+                        <h5>SOLAR</h5>
+                    </button>
+
+
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                        <img src="../assets/img/icons/lightning.svg" alt=""></img>
+                        <h5>FOCOS</h5>
+                    </button>
+                
+                    <button class="general-aside-menu__categories-item btn" type="button">
+                            <img src="../assets/img/icons/beacons.svg"alt=""></img>
+                            <h5>BALIZAS</h5>
+                    </button>
+                </div>
+            </aside>
+            <section class="banner">
+                <img src="../assets/img/banner.png" alt="">   
+            </section>
+            <section class="catalogue card-deck">
+                <div class="catalogue__item card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-2.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$25.000</h5>
+                        <p class="card-text">Linterna de mano Streamlight Siege.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="gray-button-group d-flex justify-content-center">
+                            <p class="flex-fill align-self-center pt-3">Agregar</p>
+                            <button type="button" class="btn px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-3.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$15.000</h5>
+                        <p class="card-text">Linterna Protac 2L-X recargable Streamlight.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="yellow-button-group d-flex">
+                            <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                            <p class="flex-fill align-self-center pt-3">1</p>
+                            <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-5.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$28.000</h5>
+                        <p class="card-text">Curva tubos manual 1/4” A 2”.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="gray-button-group d-flex justify-content-center">
+                            <p class="flex-fill align-self-center pt-3">Agregar</p>
+                            <button type="button" class="btn px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item  card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-6.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$23.000</h5>
+                        <p class="card-text">LLave de impacto compacta 942 1/2.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="yellow-button-group d-flex">
+                            <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                            <p class="flex-fill align-self-center pt-3">1</p>
+                            <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item  card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-4.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$25.000</h5>
+                        <p class="card-text">Linterna Protac HL recargable casco Streamlight.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="gray-button-group d-flex justify-content-center">
+                            <p class="flex-fill align-self-center pt-4">Agregar</p>
+                            <button type="button" class="btn px-3">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item  card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-8.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$250.000</h5>
+                        <p class="card-text">U1110  - Capacidad 100Amp.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="yellow-button-group d-flex">
+                            <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                            <p class="flex-fill align-self-center pt-3">1</p>
+                            <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item  card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-7.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$35.000</h5>
+                        <p class="card-text">Gabinete de seguridad Sure-Grip ex doble función con rodillos.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="gray-button-group d-flex justify-content-center">
+                            <p class="flex-fill align-self-center pt-3">Agregar</p>
+                            <button type="button" class="btn px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item  card">
+                    <button class="btn" type="button"><img src="../assets/img/products/image-9.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$35.000</h5>
+                        <p class="card-text">Sirena de emergencia MS-220.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="yellow-button-group d-flex">
+                            <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                            <p class="flex-fill align-self-center pt-3">1</p>
+                            <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cartButtonModal" class="modal fade modal-right" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">4 ITEMS</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="item-img">
+                                <img src="../assets/img/products/image-3.png">
+                            </div>
+                            <div class="item-body align-self-center">
+                                <p>Linterna Protac 2L-X recargable Streamlight.</p>
+                                <div class="yellow-button-group d-flex">
+                                    <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                                    <p class="flex-fill align-self-center pt-3">1</p>
+                                    <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price align-self-center">
+                                <h5>$15.000</h5> 
+                            </div>
+                        </div>
+                        <div class="modal-footer d-block">
+                            <div class="text">
+                                <p>TOTAL:<span> $15.000</span></p>  
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-blue">CONTACTAR VENTAS</button>
+                        </div>
+                    </div>
+                </div>
+            </section>     
+        </main>
+        <footer>
+           
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>

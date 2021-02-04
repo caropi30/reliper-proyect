@@ -1,0 +1,21 @@
+.general-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+        "aside catalogue catalogue"
+        "aside catalogue catalogue"
+        "aside catalogue catalogue";
+    column-gap: 40px;
+    padding: 2rem 8rem 0 2rem;
+    background-color: $general-back; 
+    
+    aside{
+        grid-area: aside;
+        
+    }
+
+    .catalogue {
+        grid-area: catalogue;
+    }
+
+}

@@ -1,0 +1,24 @@
+.yellow-button-group {
+    background-color: $add-button-color;
+    color: $base-color;
+    font-weight: $medium;
+    border-radius: 5px;
+
+    p {
+        font-size: $xx-small;
+        font-weight: $bold;
+    }
+
+    .btn-right {
+      @include add-button; 
+      font-weight: $bold; 
+      font-size: $xx-small;
+
+    }
+
+    .btn-left {
+        @include add-button;
+        font-weight: $bold;
+        font-size: $xx-small;
+    }
+}

@@ -1,0 +1,26 @@
+header {
+    nav{
+        .searchbar {
+            padding-left: 4rem;
+            form {
+                padding-left: 5rem;
+                .form-control {
+                    width: 80%;
+                    background-color: $third-color;
+                    border: none;
+                    border-radius:  5px 0 0 5px;
+                    padding: 2rem;
+                }
+
+                .btn-search {
+                    background-color: $cart-button;
+                    color: $fourth-color;
+                    border: unset;
+                    border-radius: 0 5px 5px 0;
+                    padding: 1.2rem 1.5rem;
+
+                }
+            }
+        }
+    }
+}

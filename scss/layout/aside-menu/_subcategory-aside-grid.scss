@@ -1,0 +1,54 @@
+.subcategory-aside-menu {
+    padding-top: 2rem;
+
+    &__dropdown {
+        text-align: center;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        
+        button {
+            width: 100%;
+        }
+        
+        .btn-secondary {
+            background-color: $secondary-color;
+            border: none;
+            color: $base-color;
+            padding: .5rem;
+            font-size: $x-small;
+        }
+    }
+
+    &__categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+
+        .goback {
+            padding: 1rem 0 0 1rem;
+
+            a {
+                color: $base-color;
+            }
+        }
+
+        &-item {
+            @include bg-item-color;
+            border: 3px solid $secondary-color;
+            text-align: center;
+            margin: 4rem;
+            @include rounded-radius;
+
+            img {
+                width: 100%;
+            }
+
+            h5 {
+                padding-top: .7rem;
+                font-size: $xx-small;
+                color: $base-color;
+                font-weight: $medium;
+            }   
+        }
+    }
+}

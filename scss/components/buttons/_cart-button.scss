@@ -1,0 +1,22 @@
+.cart-button {
+    background-color: $cart-button;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 2rem;
+
+    .btn-white {
+        background-color: $fourth-color;
+        color: $cart-button;
+        font-size: $x-small;
+        font-weight: $medium;
+        border: unset;
+        padding: 5px;
+        width: 70%;
+        height: 40%;
+    }
+
+    p {
+        color: $fourth-color;
+        font-weight: $medium;
+    }
+}

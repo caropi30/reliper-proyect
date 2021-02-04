@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reliper</title>
+        <meta name="generator" content="prestashop">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!--Style / Animate CSS / Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo align-self-center">
+                    <img src="../assets/img/logo.svg" alt="Reliper Logo">
+                </div>
+                <div class="searchbar pt-3">
+                    <form class="form-inline my-2 my-lg-0 pl-6">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Busca tus productos aquí" aria-label="Search">
+                        <button class="btn btn-outline-success btn-search my-2 my-sm-0" type="submit">Buscar</button>
+                      </form>
+                </div>
+                <div class="cart-button">
+                    <button type="button" class="btn btn-primary btn-white btn-sm align-self-center mt-2 pl-2" data-toggle="modal" data-target="#cartButtonModal">$206.000</button>
+                    <p class="mt-2">4 items</p>
+                </div>
+            </nav> 
+        </header>
+            
+        <main class="general-main">
+            <aside class="subcategory-aside-menu">
+                <div class="subcategory-aside-menu__dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FILTRO POR CATEGORÍAS
+                      </button>
+                </div>
+                <div class="subcategory-aside-menu__categories">
+                    <div class="goback">
+                        <a href="../pages/home_banner.html"> < volver</a>
+                    </div>
+                    <div class="subcategory-aside-menu__categories-item">
+                        <button class="btn" type="button">
+                            <img src="../assets/img/icons/flashlight.svg" alt=""></img>
+                            <h5>FLASHLIGHT</h5>
+                        </button>
+                    </div>
+                    <div class="subcategory-aside-menu__brands d-flex flex-column px-2">
+                        <button type="button" class="btn btn-secondary btn-lg btn-brand mb-4 mx-2 py-4">RECARGABLES</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-brand mb-4 mx-2 py-4">NO RECARGABLES</button>
+                    </div>
+                </div>
+            </aside>
+            
+            <section class="catalogue card-deck">
+                <div class="catalogue__item card">
+                    <button class="btn" type="button" data-toggle="modal" data-target="#productInfoModal"><img src="../assets/img/products/image-3.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$15.000</h5>
+                        <p class="card-text">Linterna Protac 2L-X recargable Streamlight.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="yellow-button-group d-flex">
+                            <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                            <p class="flex-fill align-self-center pt-3">1</p>
+                            <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__item card">
+                    <button class="btn" type="button" data-toggle="modal" data-target="#productInfoModal"><img src="../assets/img/products/image-2.png" alt=""></button>
+                    <div class="card-body">
+                        <h5 class="card-title">$25.000</h5>
+                        <p class="card-text">Linterna de mano Streamlight Siege.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="gray-button-group d-flex justify-content-center">
+                            <p class="flex-fill align-self-center pt-3">Agregar</p>
+                            <button type="button" class="btn px-4">+</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div id="productInfoModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="product-imgs">
+                            <div class="bg-img">
+                                <img src="../assets/img/products/image-3.png">
+                            </div>
+                            <div class="sm-img d-flex">
+                                <button type="button" class="btn"><img src="../assets/img/products/image-3.png"></button>
+                                <button type="button" class="btn"><img src="../assets/img/products/image-3.png"></button>
+                                <button type="button" class="btn"><img src="../assets/img/products/image-3.png"></button>
+                            </div>
+                        </div>    
+                        <div class="info">
+                            <div class="txt-info">
+                                <div class="title">
+                                    <h4>LINTERNA DE MANO STREAMLIGTH SIEGE</h4>
+                                    <p>COD: 44943</p>
+                                </div>
+                                <div class="description">
+                                    <p>LINTERNA DE MANO ULTRACOMPACTA Y ALCALINA</p>
+    
+                                    <p>Una linterna resistente y compacta para cuando necesite una gran cantidad de luz sin requerir demasiado espacio. La Siege AA usa pilas alcalinas AA asequibles y fáciles de encontrar para ofrecer 360° de luz suave y uniforme que ilumina un área extensa.</p>
+                                        
+                                    <p>Varios modos:
+                                    <p>LED blanco (un LED C4®) con la tapa quitada:</p>
+                                    <p>Alto, para la luz más brillante: 200 lúmenes y 7 horas de funcionamiento</p>
+                                    <p>Medio, para una luz brillante y mayor duración: 100 lúmenes, 15.5 horas de funcionamiento</p>
+                                    <p>– Bajo, para tiempos de funcionamiento prolongados cuando se necesita menos luz: 50 lúmenes y 37 horas de funcionamiento.</p>
+                                    </p>
+                                    <p>LED rojo (dos LED rojos)</p>
+                                    <p>LED rojo, Alto (modo para visión nocturna): 0.7 lúmenes, 192 horas de funcionamiento (8 días)</p>
+                                    <p>Modo SOS intermitente, para señalar emergencias: 0.7 lúmenes, 288 horas de funcionamiento (12 días)</p>
+                                </div>
+                            </div>
+                            <div class="price-info d-flex justify-content-between">
+                                <div class="price">
+                                    <p>PRECIO  <span>$25.000</span></p>
+                                </div>
+                                <div class="gray-button-group d-flex justify-content-center">
+                                    <p class="flex-fill align-self-center pt-3">Agregar</p>
+                                    <button type="button" class="btn px-4">+</button>
+                                </div> 
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="modal-footer">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        <!--    <section id="productInfoModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="product-imgs">
+                                    <div class="bg-img">
+                                        <img src="../assets/img/products/image-2.png">
+                                    </div>
+                                    <div class="carousel d-flex">
+                                        <img src="../assets/img/products/image-2.png">
+                                        <img src="../assets/img/products/image-2.png">
+                                        <img src="../assets/img/products/image-2.png">
+                                    </div>
+                                </div>
+                                <div class="text-info">
+                                    <div class="title">
+                                        <h4>LINTERNA DE MANO STREAMLIGTH SIEGE</h4>
+                                        <p>COD: 44943</p>
+                                    </div>
+                                    <div class="description">
+                                        <p>LINTERNA DE MANO ULTRACOMPACTA Y ALCALINA</p>
+        
+                                        <p>Una linterna resistente y compacta para cuando necesite una gran cantidad de luz sin requerir demasiado espacio. La Siege AA usa pilas alcalinas AA asequibles y fáciles de encontrar para ofrecer 360° de luz suave y uniforme que ilumina un área extensa.</p>
+                                            
+                                        <p>Varios modos:
+                                            LED blanco (un LED C4®) con la tapa quitada:
+                                            Alto, para la luz más brillante: 200 lúmenes y 7 horas de funcionamiento
+                                            Medio, para una luz brillante y mayor duración: 100 lúmenes, 15.5 horas de funcionamiento
+                                            – Bajo, para tiempos de funcionamiento prolongados cuando se necesita menos luz: 50 lúmenes y 37 horas de funcionamiento.
+                                        </p>
+                                        <p>LED rojo (dos LED rojos)
+                                        LED rojo, Alto (modo para visión nocturna): 0.7 lúmenes, 192 horas de funcionamiento (8 días)
+                                        Modo SOS intermitente, para señalar emergencias: 0.7 lúmenes, 288 horas de funcionamiento (12 días)</p>
+                                    </div>
+                                    <div class="price-info">
+                                        <div class="price">
+                                            <p>PRECIO  $25.000</p>
+                                        </div>
+                                        <div class="gray-button-group d-flex justify-content-center">
+                                            <p class="flex-fill align-self-center pt-3">Agregar</p>
+                                            <button type="button" class="btn px-4">+</button>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+
+            <section id="cartButtonModal" class="modal fade modal-right" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">4 ITEMS</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="item-img">
+                                <img src="../assets/img/products/image-3.png">
+                            </div>
+                            <div class="item-body align-self-center">
+                                <p>Linterna Protac 2L-X recargable Streamlight.</p>
+                                <div class="yellow-button-group d-flex">
+                                    <button type="button" class="btn btn-secondary btn-right px-4">-</button>
+                                    <p class="flex-fill align-self-center pt-3">1</p>
+                                    <button type="button" class="btn btn-secondary btn-left px-4">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price align-self-center">
+                                <h5>$15.000</h5> 
+                            </div>
+                        </div>
+                        <div class="modal-footer d-block">
+                            <div class="text">
+                                <p>TOTAL:<span> $15.000</span></p>  
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-blue">CONTACTAR VENTAS</button>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+        </main>
+        <footer></footer> 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>

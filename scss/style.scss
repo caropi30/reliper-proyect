@@ -1,0 +1,38 @@
+/*Utilities Folder*/
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+/*Utilities Folder*/
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+/*Base Folder*/
+@import 'base/typography';
+@import 'base/reset';
+
+
+/*Layout Folder*/
+@import 'layout/aside-menu/general-aside-grid';
+@import 'layout/aside-menu/brands-aside-grid';
+@import 'layout/aside-menu/banner-aside-grid';
+@import 'layout/aside-menu/subcategory-aside-grid';
+@import 'layout/catalogue/catalogue-grid';
+@import 'layout/header/header';
+@import 'layout/main/banner-grid';
+@import 'layout/main/general-grid';
+@import 'layout/modals/cart-grid';
+@import 'layout/modals/product-info-grid';
+@import 'layout/footer/footer';
+
+/*Components Folder*/
+@import 'components/banner/banner';
+@import 'components/buttons/yellow-add-button';
+@import 'components/buttons/brand-button';
+@import 'components/buttons/cart-button';
+@import 'components/buttons/gray-add-button';
+@import 'components/modals/product-info';
+@import 'components/modals/shop-cart';
+@import 'components/searchbar/searchbar';
+
+
+

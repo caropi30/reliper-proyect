@@ -1,0 +1,31 @@
+.banner {
+    position: relative;
+    img {
+        @include rounded-radius;
+    }
+
+    &__promo {
+        @include bg-transparent ;
+        bottom: 15.7rem;
+        left: 50rem;
+        width: 27%;
+        position: relative;
+
+        img {
+            border-radius: 0 10px 0 0;
+            width: 100%;
+            @include bg-transparent;
+        }
+
+        h6 {
+            position: absolute;
+            z-index: 1;
+            bottom: 1.8rem;
+            left: 4rem;
+            transform: rotate(16deg);
+            font-size: 1rem;
+            background: transparent;
+        }
+
+    }
+}

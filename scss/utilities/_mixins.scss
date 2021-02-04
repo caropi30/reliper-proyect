@@ -1,0 +1,203 @@
+@mixin bg-item-color {
+    background-color: $fourth-color;
+}
+
+@mixin bg-transparent {
+    background: transparent;
+}
+
+@mixin rounded-radius {
+    border-radius: 10px;
+}
+
+@mixin add-button {
+    background-color: $add-button-color;
+    border: none;
+    color: $base-color;
+}
+
+/*Banner main*/
+@mixin banner-main-xl {
+   .banner-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+        "aside banner banner"
+        "aside catalogue catalogue"
+        "aside catalogue catalogue";
+    column-gap: 40px;
+    padding: 2rem 8rem 0 2rem;
+    background-color: $general-back; 
+    
+    aside{
+        grid-area: aside;
+        
+    }
+
+    .banner {
+        grid-area: banner;
+        img {
+            width: 100%;
+        }
+    }
+
+    .catalogue {
+        grid-area: catalogue;
+    }
+
+} 
+}
+
+@mixin banner-main-lg {
+    .banner-main {
+        display: block;
+        padding: 3rem 3rem 0 3rem;
+
+        .banner {
+           display: none;
+        }
+    
+    } 
+}
+
+/*Catalogue Grid*/
+@mixin catalogue-grid-xl {
+    .catalogue {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 10px;
+        row-gap: 10px;
+        padding:1rem 2rem 0 0;
+    
+        &__item {
+            @include bg-item-color;
+            border: 3px solid $secondary-color;
+            margin: 2rem;
+            padding: .5rem;
+    
+            img {
+                width: 100%;
+            }
+    
+            .card-body {
+                h5 {
+                    color: $base-color;;
+                }
+    
+                p {
+                    color: $primary-color;;
+                }
+            }
+    
+            .card-footer {
+                border: none;
+                text-align: center;
+                @include bg-item-color;
+            }
+        }
+    }
+}
+
+
+@mixin catalogue-grid-lg {
+    .catalogue {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    
+        &__item {
+            @include bg-item-color;
+            border: 3px solid $secondary-color;
+            margin: 2rem;
+            padding: .5rem;
+    
+            img {
+                width: 100%;
+            }
+    
+            .card-body {
+                h5 {
+                    color: $base-color;;
+                }
+    
+                p {
+                    color: $primary-color;;
+                }
+            }
+    
+            .card-footer {
+                border: none;
+                text-align: center;
+                @include bg-item-color;
+            }
+        }
+    }
+}
+
+/*Aside Memu*/
+
+@mixin general-aside-menu-xl {
+    .general-aside-menu {
+        padding-top: 2rem;
+    
+        &__dropdown {
+            text-align: start;
+            padding-right: .5rem;
+            padding-left: .5rem;
+            
+            button {
+                width: 100%;
+            }
+            
+            .btn-secondary {
+                background-color: $secondary-color;
+                border: none;
+                color: $base-color;
+                padding: .5rem;
+                font-size: $x-small;
+            }
+        }
+    
+        &__categories {
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 4fr;
+            column-gap: 10px;
+            row-gap: 20px;
+            padding: 2rem 1rem 0 0;
+    
+            &-item {
+                @include bg-item-color;
+                border: 3px solid $secondary-color;
+                text-align: center;
+                padding: 3rem 1.5rem;
+                @include rounded-radius;
+    
+                img {
+                    width: 50%;
+                }
+    
+                h5 {
+                    padding-top: .7rem;
+                    font-size: $xx-small;
+                    color: $base-color;
+                    font-weight: $medium;
+                }   
+            }
+        }
+    }
+}
+
+@mixin general-aside-menu-lg-md-sm {
+    background-color: ;
+    .general-aside-menu {
+        &__categories {
+            display: none;
+        }
+    }
+}
+
+
+/*Footer*/
+@mixin footer {
+    background-color:  $general-back;
+}

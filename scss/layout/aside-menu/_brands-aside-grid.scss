@@ -1,0 +1,25 @@
+.brand-aside-menu {
+    padding-top: 4rem;
+
+    &__dropdown {
+        text-align: center;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        
+        button {
+            width: 100%;
+        }
+        
+        .btn-secondary {
+            background-color: $secondary-color;
+            border: none;
+            color: $base-color;
+            padding: .5rem;
+            font-size: $x-small;
+        }
+    }
+
+    &__brands {
+        padding: 2rem 3rem 0 3rem;
+    }
+}
