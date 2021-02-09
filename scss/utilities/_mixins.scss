@@ -16,37 +16,77 @@
     color: $base-color;
 }
 
-/*Banner main*/
-@mixin banner-main-xl {
-   .banner-main {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas:
-        "aside banner banner"
-        "aside catalogue catalogue"
-        "aside catalogue catalogue";
-    column-gap: 40px;
-    padding: 2rem 8rem 0 2rem;
-    background-color: $general-back; 
+/*Header*/
+@mixin header-xl-lg {
+    header{
+        .primary-nav{
+            padding: 1rem 0 1.5rem 0;
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
     
-    aside{
-        grid-area: aside;
-        
-    }
-
-    .banner {
-        grid-area: banner;
-        img {
-            width: 100%;
+            .logo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .second-nav {
+            display: none;
         }
     }
-
-    .catalogue {
-        grid-area: catalogue;
-    }
-
-} 
 }
+
+@mixin header-md-sm-xs {
+    header{
+        .primary-nav{
+            display: none;
+        }
+        .second-nav {
+            display: grid;
+            grid-template-rows: 2fr;
+            .logo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*Banner main*/
+@mixin banner-main-xl {
+    .banner-main {
+     display: grid;
+     grid-template-columns: 20% 80%;
+     grid-template-areas:
+         "aside banner banner"
+         "aside catalogue catalogue"
+         "aside catalogue catalogue";
+     column-gap: 40px;
+     padding: 2rem 8rem 0 2rem;
+     background-color: $general-back; 
+     
+        aside{
+            grid-area: aside;
+            
+        }
+    
+        .banner {
+            grid-area: banner;
+            img {
+                width: 100%;
+            }
+        }
+    
+        .catalogue {
+            grid-area: catalogue;
+        }
+    }
+ }
+
+
+
+
 
 @mixin banner-main-lg {
     .banner-main {
@@ -60,8 +100,21 @@
     } 
 }
 
+@mixin banner-main-md {
+    .banner-main {
+        display: block;
+        padding: 3rem 3rem 0 3rem;
+
+        .banner {
+           display: none;
+        }
+    }
+}
+
+
+
 /*Catalogue Grid*/
-@mixin catalogue-grid-xl {
+@mixin catalogue-grid-xl-lg{
     .catalogue {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -99,10 +152,10 @@
 }
 
 
-@mixin catalogue-grid-lg {
+@mixin catalogue-grid-md-sm-xs {
     .catalogue {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 50% 50%;
     
         &__item {
             @include bg-item-color;
@@ -133,9 +186,10 @@
     }
 }
 
-/*Aside Memu*/
 
-@mixin general-aside-menu-xl {
+/*Aside Memus*/
+/*General Aside*/
+@mixin general-aside-menu-xl-lg {
     .general-aside-menu {
         padding-top: 2rem;
     
@@ -187,8 +241,7 @@
     }
 }
 
-@mixin general-aside-menu-lg-md-sm {
-    background-color: ;
+@mixin general-aside-menu-md-sm {
     .general-aside-menu {
         &__categories {
             display: none;
@@ -200,4 +253,188 @@
 /*Footer*/
 @mixin footer {
     background-color:  $general-back;
+}
+
+/*Components*/
+
+/*Banner*/
+@mixin banner-xl {
+    .banner {
+        position: relative;
+        img {
+            @include rounded-radius;
+        }
+    
+        &__promo {
+            @include bg-transparent;
+            bottom: 15.7rem;
+            left: 50rem;
+            width: 27%;
+            position: relative;
+    
+            img {
+                border-radius: 0 10px 0 0;
+                width: 100%;
+                @include bg-transparent;
+            }
+    
+            h6 {
+                position: absolute;
+                z-index: 1;
+                bottom: 1.8rem;
+                left: 4rem;
+                transform: rotate(16deg);
+                font-size: 1rem;
+                background: transparent;
+            }
+    
+        }
+    }
+}
+
+@mixin banner-lg {
+    .banner {
+        position: relative;
+        img {
+            @include rounded-radius;
+        }
+    
+        &__promo {
+            @include bg-transparent ;
+            bottom: 15.7rem;
+            left: 50rem;
+            width: 27%;
+            position: relative;
+    
+            img {
+                border-radius: 0 10px 0 0;
+                width: 100%;
+                @include bg-transparent;
+            }
+    
+            h6 {
+                position: absolute;
+                z-index: 1;
+                bottom: 1.8rem;
+                left: 4rem;
+                transform: rotate(16deg);
+                font-size: 1rem;
+                background: transparent;
+            }
+    
+        }
+    }
+}
+
+@mixin banner-md-sm-xs {
+    .banner {
+        display: none;
+    }
+}
+
+/*Searchbar*/
+@mixin searchbar-xl-lg {
+    header {
+        .primary-nav{
+            .searchbar {
+                padding-left: 4rem;
+                form {
+                    padding-left: 5rem;
+                    .form-control {
+                        width: 80%;
+                        background-color: $third-color;
+                        border: none;
+                        border-radius:  5px 0 0 5px;
+                        padding: 2rem;
+                    }
+    
+                    .btn-search {
+                        background-color: $cart-button;
+                        color: $fourth-color;
+                        border: unset;
+                        border-radius: 0 5px 5px 0;
+                        padding: 1.2rem 1.5rem;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin searchbar-md-sm-xs {
+    header {
+        .second-nav{
+            .searchbar {
+                form {
+                    .form-control {
+                        width: 80%;
+                        background-color: $third-color;
+                        border: none;
+                        border-radius: 0;
+                        padding: 2rem;
+                    }
+    
+                    .btn-search {
+                        background-color: $cart-button;
+                        color: $fourth-color;
+                        border: none;
+                        border-radius: 0;
+                        padding: 1.2rem 1.5rem;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin cart-button-xl-lg {
+    .cart-button {
+        background-color: $cart-button;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0 2rem;
+    
+        .btn-white {
+            background-color: $fourth-color;
+            color: $cart-button;
+            font-size: $x-small;
+            font-weight: $medium;
+            border: unset;
+            padding: 5px;
+            width: 70%;
+            height: 40%;
+        }
+    
+        p {
+            color: $fourth-color;
+            font-weight: $medium;
+        }
+    }
+}
+
+@mixin cart-button-md-sm-xs {
+    .cart-button {
+        background-color: $cart-button;
+        border-radius: 5px;
+        text-align: center;
+        padding: 0 2rem;
+    
+        .btn-white {
+            background-color: $fourth-color;
+            color: $cart-button;
+            font-size: $x-small;
+            font-weight: $medium;
+            border: unset;
+            padding: 5px;
+            width: 100%;
+            height: 40%;
+        }
+    
+        p {
+            color: $fourth-color;
+            font-weight: $medium;
+        }
+    }
 }

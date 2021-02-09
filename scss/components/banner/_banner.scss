@@ -1,31 +1,26 @@
-.banner {
-    position: relative;
-    img {
-        @include rounded-radius;
-    }
-
-    &__promo {
-        @include bg-transparent ;
-        bottom: 15.7rem;
-        left: 50rem;
-        width: 27%;
-        position: relative;
-
-        img {
-            border-radius: 0 10px 0 0;
-            width: 100%;
-            @include bg-transparent;
-        }
-
-        h6 {
-            position: absolute;
-            z-index: 1;
-            bottom: 1.8rem;
-            left: 4rem;
-            transform: rotate(16deg);
-            font-size: 1rem;
-            background: transparent;
-        }
-
-    }
+// Extra small devices (landscape phones, 200px and up)
+@media (min-width: 200px) and (max-width: 575.98px){
+    @include banner-md-sm-xs;
+}   
+ 
+ // Small devices (landscape phones, 576px and up)
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    @include banner-md-sm-xs;
+ }
+ 
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    @include banner-md-sm-xs;
 }
+ 
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    @include banner-lg;
+}
+ 
+ // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) {
+    @include banner-xl;
+}
+ 
+ 

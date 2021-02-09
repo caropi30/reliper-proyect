@@ -1,22 +1,28 @@
-.cart-button {
-    background-color: $cart-button;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0 2rem;
+// Extra small devices (landscape phones, 200px and up)
+@media (min-width: 200px) and (max-width: 575.98px){
+   @include cart-button-md-sm-xs; 
+ }
+ 
+ // Small devices (landscape phones, 576px and up)
+ @media (min-width: 576px) and (max-width: 767.98px) {
+   @include cart-button-md-sm-xs; 
+ }
+ 
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    @include cart-button-md-sm-xs;
+ }
+ 
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    @include cart-button-xl-lg;
+ }
+     
 
-    .btn-white {
-        background-color: $fourth-color;
-        color: $cart-button;
-        font-size: $x-small;
-        font-weight: $medium;
-        border: unset;
-        padding: 5px;
-        width: 70%;
-        height: 40%;
-    }
-
-    p {
-        color: $fourth-color;
-        font-weight: $medium;
-    }
-}
+ // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) {
+    @include cart-button-xl-lg;   
+ }
+    
+ 
+ 
