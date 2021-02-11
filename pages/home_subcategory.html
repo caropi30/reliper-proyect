@@ -18,21 +18,37 @@
 
     <body>
         <header>
-            <nav>
+            <nav class="primary-nav">
                 <div class="logo align-self-center">
                     <img src="../assets/img/logo.svg" alt="Reliper Logo">
                 </div>
-                <div class="searchbar pt-3">
-                    <form class="form-inline my-2 my-lg-0 pl-6">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Busca tus productos aquí" aria-label="Search">
+                <div class="searchbar pt-3 d-flex">
+                        <input class="form-control mr-sm- align-self-center" type="search" placeholder="Busca tus productos aquí" aria-label="Search">
                         <button class="btn btn-outline-success btn-search my-2 my-sm-0" type="submit">Buscar</button>
-                      </form>
                 </div>
                 <div class="cart-button">
                     <button type="button" class="btn btn-primary btn-white btn-sm align-self-center mt-2 pl-2" data-toggle="modal" data-target="#cartButtonModal">$206.000</button>
                     <p class="mt-2">4 items</p>
                 </div>
             </nav> 
+
+            <nav class="second-nav">
+                <div class="first-row justify-content-between d-flex">
+                    <div class="logo align-self-center">
+                        <img src="../assets/img/logo.svg" alt="Reliper Logo">
+                    </div>
+                    <div class="cart-button">
+                        <button type="button" class="btn btn-primary btn-white btn-sm align-self-center mt-2 pl-2" data-toggle="modal" data-target="#cartButtonModal">$206.000</button>
+                        <p class="mt-2">4 items</p>
+                    </div>
+                </div>
+                <div class="searchbar">
+                    <form class="form-inline my-2 my-lg-0 pl-6">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Busca tus productos aquí" aria-label="Search">
+                        <button class="btn btn-outline-success btn-search my-2" type="submit">Buscar</button>
+                      </form>
+                </div>
+            </nav>
         </header>
             
         <main class="general-main">
